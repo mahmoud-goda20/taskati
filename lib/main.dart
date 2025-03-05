@@ -9,8 +9,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
   await Hive.openBox("userBox");
-  await Hive.openBox<TaskModel>("taskBox");
   Hive.registerAdapter(TaskModelAdapter());
+  await Hive.openBox<TaskModel>("taskBox");
   AppLocalStorage.init();
   runApp(const MainApp());
 }

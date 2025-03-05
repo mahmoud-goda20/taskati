@@ -1,7 +1,7 @@
 import 'package:hive/hive.dart';
 part 'task_model.g.dart';
 
-@HiveType(typeId: 1)
+@HiveType(typeId: 0)
 class TaskModel {
   @HiveField(0)
   final String id;
@@ -44,11 +44,11 @@ class TaskModel {
     return TaskModel(
         id: id ?? this.id,
         title: title ?? this.title,
-        description: description??this.description,
-        date: date??this.date,
-        startTime: startTime??this.startTime,
-        endTime: endTime??this.endTime,
-        isCompleted: isCompleted??this.isCompleted,
-        color: color??this.color);
+        description: description ?? this.description,
+        date: date ?? this.date,
+        startTime: startTime ?? this.startTime,
+        endTime: endTime ?? this.endTime,
+        isCompleted: isCompleted ?? this.isCompleted,
+        color: color ?? this.color);
   }
 }

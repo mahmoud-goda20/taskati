@@ -21,7 +21,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String? path;
   TextEditingController nameController = TextEditingController();
   String? name;
-  bool isDrarkTheme = true;
+  bool isDrarkTheme = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(

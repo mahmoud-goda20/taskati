@@ -39,7 +39,7 @@ class _HomeHeaderState extends State<HomeHeader> {
         )),
         GestureDetector(
           onTap: () {
-            context.pushTo(ProfileScreen());
+            context.pushTo(const ProfileScreen());
           },
           child: CircleAvatar(
             radius: 25,
